@@ -9,8 +9,7 @@ db = client["TokoOnline"]
 collectionA = db["KatalogElektronik"]  
 collectionB = db["KatalogPakaian"] 
 
-
-st.markdown("# 💻 Selamat Datang Di TokoOnlineGroup1")
+st.markdown("<h1 style='color: orange;'># 💻 Selamat Datang Di TokoOnline Kelompok 1</h1>", unsafe_allow_html=True)
 st.markdown("### 👥 Anggota Kelompok:")
 st.write("- Nabiel Fauzan (20230040222)")
 st.write("- Rizky Fadillah (20230040083)")
@@ -21,7 +20,7 @@ st.divider()
 
 # Form Input Produk Elektronik
 # Form Input Produk
-st.title("Tambah / Update Stok Produk Elektronik")
+st.markdown("<h1 style='color: green;'>Tambah / Update Stok Produk Elektronik</h1>", unsafe_allow_html=True)
 with st.form("form_tambah_produk_elektronik"):
     nama_produk = st.text_input("Nama Produk")
     harga = st.number_input("Harga", min_value=0)
@@ -69,7 +68,7 @@ with st.form("form_tambah_produk_elektronik"):
             st.error("❌ Mohon isi semua data dengan benar!")
 
 
-st.title("Tambah / Update stok produk Pakaian")
+st.markdown("<h1 style='color: yellow;'>Tambah / Update Stok Produk Pakaian</h1>", unsafe_allow_html=True)
 with st.form("form_tambah_produk_pakaian"):
     nama_produk = st.text_input("Nama Brand")
     jenis_produk = st.selectbox("Jenis ", ["Celana", "Kaos", "Kameja", "jaket"])
